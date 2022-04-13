@@ -1,43 +1,35 @@
 <style>
 
-  .circle {
+/*   .circle {
     background-color: yellow;
     height: 100px;
     width: 100px;
     border-radius: 50%;
     margin: 100px auto;
     
-  }
+  } */
 
 </style>
 
 
 <!-- <div class="circle">
 </div> -->
-<img src=""
+<img class="laputa" src="laputa.jpg" alt="laputa">
 
 <script>
 
-	const circle = document.querySelector('.circle')
-	
+	const cat = document.querySelector('.laputa')
   
-  function colorChange (e) {
-    if (e.key === 'a') {
-      circle.style.backgroundColor = 'blue' 
-    } else if (e.key === 's') {
-      circle.style.backgroundColor = 'green'
-    } 
-    
+  
+	function imgChange () {
+    cat.src = 'tibetan fox.png'
   }
   
-  function colorReset () {
-    circle.style.backgroundColor = "yellow"
+  function imgReset () {
+    cat.src = 'laputa.jpg'
   }
-
-
-	//window.addEventListener('keypress', colorChange)
   
-  window.addEvenListener('keydown', colorChange)
-  window.addEvenListener('keyup', colorReset)
+  window.addEventListener('keydown', imgChange)
+  window.addEventListener('keyup', imgReset)
 
 </script>
