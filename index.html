@@ -1,0 +1,43 @@
+<style>
+
+  .circle {
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 100px auto;
+    
+  }
+
+</style>
+
+
+<!-- <div class="circle">
+</div> -->
+<img src=""
+
+<script>
+
+	const circle = document.querySelector('.circle')
+	
+  
+  function colorChange (e) {
+    if (e.key === 'a') {
+      circle.style.backgroundColor = 'blue' 
+    } else if (e.key === 's') {
+      circle.style.backgroundColor = 'green'
+    } 
+    
+  }
+  
+  function colorReset () {
+    circle.style.backgroundColor = "yellow"
+  }
+
+
+	//window.addEventListener('keypress', colorChange)
+  
+  window.addEvenListener('keydown', colorChange)
+  window.addEvenListener('keyup', colorReset)
+
+</script>
