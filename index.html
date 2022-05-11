@@ -1,7 +1,7 @@
 <style>
 
    .circle {
-    background-color: yellow;
+    background-color: yellow; 
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -10,25 +10,33 @@
   } 
 
 </style>
+<center>
 
-  <audio src="combined1.mp3" autoplay="combined1.mp3" loop="combined1.mp3">
+  <audio src="Summertime.mp3" autoplay="Summertime.mp3" loop="Summertime.mp3">
   </audio>
 
 <div class="circle">
-</div> 
+</div> press the key up & down!
+<br>
 <img class="laputa" src="laputa.jpg" alt="laputa">
 
+  <br>
+  <br>
+  <br>
+  <br>
+  
+</center>
 <script>
 
 	const cat = document.querySelector('.laputa')
   
-  
+   
 	function imgChange () {
     cat.src = 'tibetan fox.png'
   }
   
   function imgReset () {
-    cat.src = 'laputa.jpg'
+    cat.src = 'flowers.gif'
   }
   
   window.addEventListener('keydown', imgChange)
